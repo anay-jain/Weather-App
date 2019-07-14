@@ -9,7 +9,7 @@ request({url:url , json:true} , (error, response)=>{
     }
     else{
         callback(error, {
-            data : response.body.daily[0]
+            data : response.body.daily.data[0].summary +" and the temp is  " +  response.body.currently.temperature
     })
     }
 

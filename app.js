@@ -6,14 +6,14 @@ if(!address){
     console.log("Please enter address after your js file name")
 }
 else{
-    geocode(address , (error,data)=>{
+    geocode(address , (error,{latitude ,longitude,location})=>{
         if(error){
             console.log(error)
        }
         else
          {
-             weather(data.latitude,data.longitude,(error , forecastdata) => {
-             console.log("Location :  " , data.location)
+             weather(latitude,longitude,(error , forecastdata) => {
+             console.log("Location :  " , location)
              console.log("Results : " , forecastdata)
              })
          }

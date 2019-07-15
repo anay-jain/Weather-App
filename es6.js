@@ -13,6 +13,7 @@ console.log(user)
 
 // object destructuring
 
+// suppose we created a object called product 
 const product = {
     label : "Oneplus",
     price : 6,

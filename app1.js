@@ -12,3 +12,6 @@ var add = (a,b,callback) => {
 const data = add(2,4,(data) => {
     console.log(data)
 })
+var multiply = () => {
+    console.log("hello")
+}

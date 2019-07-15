@@ -9,7 +9,7 @@ else{
     geocode(address , (error,data)=>{
         if(error){
             console.log(error)
-        }
+       }
         else
          {
              weather(data.latitude,data.longitude,(error , forecastdata) => {
